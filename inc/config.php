@@ -9,6 +9,6 @@
 */
 
 define("DB_HOST", "localhost");
-define("DB_USER", "c2admin");
-define("DB_PASSWORD", "wA4Gry!T");
-define("DB_NAME", "c2portfolio");
+define("DB_USER", "Your DB user");
+define("DB_PASSWORD", "Your Password");
+define("DB_NAME", "Database name");
