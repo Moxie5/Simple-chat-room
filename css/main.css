@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+.full-width {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.alert {
+    color: #444444;
+}
+#top-bar {
+    padding: 5px 0;
+    background-color: #d6d6d6;
+}
+#login-form span:nth-child(5), span:nth-child(6) {
+    font-size: 12px;
+    cursor: pointer;
+}
+#login-form span:hover {
+    color: #444444;
+}
+.logo {
+    left: 25px;
+    top: 50%;
+    font-weight: bold;
+    position: relative;
+    transform: translateY(15%);
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#2ecc71, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bree Serif', serif;
+}
+.logout {
+    right: 25px;
+    position: relative;
+}
+input[type=text], input[type=email], input[type=password] {
+    height: 35px;
+    outline: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #aaaaaa;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+    border: 2px solid #27ae60;
+}
+.btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: #2ecc71;
+}
+.btn:hover {
+    background-color: #27ae60;
+}
+#registar {
+    padding: 40px 0;
+    border-bottom: 1px solid #444444;   
+}
+#signup-form  {
+    line-height: 3;
+    max-width: 450px;
+}
+#signup-form input {
+    width: 100%;
+}
+.caption i {
+    color: #27ae60;
+    font-size: 40px;
+}
+#terms {
+    font-size: 14px;
+}
+#terms a {
+    color: #2ecc71;
+}
+#terms a:hover {
+    color: #27ae60;
+}
+.social {
+    text-align: center;
+    padding: 18px 0;
+}
+.social i {
+    margin: 10px 20px;
+    cursor: pointer;
+    color: #27ae60;
+    font-size: 40px;
+    translate: scale 1s;
+}
+.social i:hover {
+    transform: scale(1.1);
+}
+.social p {
+    padding: 10px 0;
+}
+.site-info {
+    padding: 15px 0;
+    color: #444444;
+    font-size: 14px;
+    text-align: center;
+    background-color: #2ecc71;
+}
+.placeholder::placeholder {
+    font-size: 14px;
+    color: #bd2b1b;
+}
+.placeholder:-ms-input-placeholder { 
+    font-size: 14px;
+    color: #bd2b1b;
+}
+.placeholder::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #bd2b1b;
+}
+/* Chat-ROOM */
+.send input {
+    width: 100%;
+    bottom: 20px;
+}
+#users-online {
+    padding: 5px 0;
+    margin: 2.5px 0;
+    text-align: center;
+    border-bottom: 1px solid #aaaaaa;
+}
+.online {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #27ae60;
+}
+.offline {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #e74c3c;
+}
+.global-chat {
+    height: auto;
+    width: 100%;
+    position:relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    -ms-flex: 0 0 85%;
+    flex: 0 0 85%;
+    max-width: 85%;
+}
+.message-box {
+    margin-left: 13px;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 5px;
+    position: relative;
+}
+.message-box input {
+    width: 93%;
+    max-width: 100%;
+    margin: 5px 0;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #aaaaaa;
+}
+.message-box input:focus {
+    border: 2px solid #27ae60;
+}
+.show-chat-history {
+    cursor: pointer;
+    color: #3498db;
+    text-align: center;
+}
+.show-chat-history:hover {
+    color: #2ecc71;
+}
+#modal-show-history {
+    overflow-y: auto;
+}
+.messages {
+    max-height: 91%;
+    height: 91%;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.members {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 15%;
+    border-left: 2px solid #aaaaaa;
+}
+.modal_content {
+    height: 500px;
+    width: 400px;
+    background-color: #dddddd;
+}
+.you-user {
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    background-color: #dddddd;
+}
+.you-msg {
+    color: #27ae60;
+}
+.from-user {
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    background-color: #b4b4b4;
+}
+.timestamp {
+    text-align: right;
+}
+.from-msg {
+    color: #bd2b1b;
+}
+em {
+    font-size: 12px;
+}
+.private_chat {
+    cursor: pointer;
+}
+.users {
+    margin: 5px 0;
+}
+::placeholder {
+    color: #2f3640;
+    font-size: 14px;
+}
+:-ms-input-placeholder { 
+    font-size: 14px;
+    color: #2f3640;
+}
+::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #2f3640;   
+}
